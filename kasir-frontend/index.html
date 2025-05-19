@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kasir App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Aplikasi Kasir</h1>
+
+    <!-- Form Tambah / Update Produk -->
+    <div class="bg-white p-4 rounded shadow mb-6">
+      <form id="product-form" class="flex flex-col gap-4">
+        <input type="hidden" id="product-id" />
+        <input type="text" id="name" placeholder="Nama Produk" required class="p-2 border rounded" />
+        <input type="number" id="price" placeholder="Harga" required class="p-2 border rounded" />
+        <input type="number" id="stock" placeholder="Stok" required class="p-2 border rounded" />
+        <button type="submit" class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+          Simpan Produk
+        </button>
+      </form>
+    </div>
+
+    <!-- List Produk -->
+    <div class="bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Daftar Produk</h2>
+      <table class="w-full table-auto border-collapse">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="border px-4 py-2">Nama</th>
+            <th class="border px-4 py-2">Harga</th>
+            <th class="border px-4 py-2">Stok</th>
+            <th class="border px-4 py-2">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+          <!-- Produk akan ditampilkan di sini -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

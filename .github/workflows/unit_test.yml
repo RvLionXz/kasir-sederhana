@@ -27,7 +27,7 @@ jobs:
     - name: Run unit tests
       run: |
         cd kasir-backend
-        npm start
+        npm start &
 
     - name: wait for sleep
       run: sleep 5

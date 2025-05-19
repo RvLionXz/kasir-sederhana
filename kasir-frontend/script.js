@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3000/products';
+const apiUrl = 'http://47.250.187.233:3031/products';
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchProducts();

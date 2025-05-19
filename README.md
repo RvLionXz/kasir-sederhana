@@ -6,6 +6,7 @@ Aplikasi Kasir sederhana berbasis **Node.js (Express)** untuk backend, **MySQL**
 
 ## 📦 Fitur
 
+
 - Tambah produk
 - Lihat daftar produk
 - Edit produk

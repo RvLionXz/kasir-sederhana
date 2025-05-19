@@ -21,7 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: npm init -y
-      run: npm install express mysql2 cors dotenv
+           npm install express mysql2 cors dotenv
 
     - name: Run unit tests
       run: npm test

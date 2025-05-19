@@ -33,6 +33,6 @@ jobs:
       run: sleep 5
 
     - name: Stop server
-      run: kill $(lsof -t  -i:3000)
+      run: lsof -t -i:3000 | xargs -r kill
 
     

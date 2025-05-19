@@ -27,6 +27,6 @@ jobs:
     - name: Run unit tests
       run: |
         cd kasir-backend
-        npm start
+        npm test
 
     

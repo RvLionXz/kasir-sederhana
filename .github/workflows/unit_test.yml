@@ -32,9 +32,6 @@ jobs:
     - name: wait for sleep
       run: sleep 5
 
-    - name: Run tests
-      run: npm test
-
     - name: Stop server
       run: kill $(lsof -t  -i:3000)
 

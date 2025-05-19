@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   backend:
+    container_name: backend-kasir
     build: ./kasir-backend
     ports:
       - "3031:3031"
